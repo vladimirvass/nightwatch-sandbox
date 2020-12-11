@@ -4,9 +4,7 @@ module.exports = {
     elements: {
         inputSearchTerm: '[name="as_q"]',
         divLanguageDropdown: '#lr_button',
-        // liLanguageDropdownValue: '[value="lang_en"]',
         divLastUpdateDropdown: '#as_qdr_button',
-        // liLastUpdateDropdownValue: `[value="m"]`,
         btnSubmitAdvancedSearch: '.jfk-button-action'
     },
 
