@@ -60,7 +60,7 @@ module.exports = {
             args: [
               // '-headless',
               // '-verbose'
-            ],
+            ]
           }
         }
       },
