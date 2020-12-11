@@ -27,9 +27,11 @@ module.exports = {
       launch_url: 'https://nightwatchjs.org',
 
       screenshots: {
-        enabled: false,
+        enabled: true,
         path: 'screens',
-        on_failure: true
+        on_failure: true,
+        on_error: true,
+        path: 'test_output/screenshots'
       },
 
       desiredCapabilities: {
@@ -85,7 +87,7 @@ module.exports = {
             //'--no-sandbox',
             //'--ignore-certificate-errors',
             //'--allow-insecure-localhost',
-            //'--headless'
+            '--headless'
           ]
         }
       },
