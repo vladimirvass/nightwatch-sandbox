@@ -6,7 +6,9 @@
   "scripts": {
     "test": "nightwatch",
     "debug": "node --inspect-brk node_modules\\nightwatch\\bin\\nightwatch",
-    "test:browserstack": "nightwatch -c nightwatch.browserstack.conf.js"
+    "test:browserstack": "nightwatch -c nightwatch.browserstack.conf.js",
+    "test:vrt": "nightwatch -c nightwatch.vrt.conf.js",
+    "consolidate:vrt": "set CONSOLIDATE=1 && npm run test:vrt"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +19,7 @@
     "nightwatch": "^1.5.1"
   },
   "dependencies": {
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "nightwatch-vrt": "^0.2.10"
   }
 }
