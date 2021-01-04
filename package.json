@@ -8,17 +8,21 @@
     "debug": "node --inspect-brk node_modules\\nightwatch\\bin\\nightwatch",
     "test:browserstack": "nightwatch -c nightwatch.browserstack.conf.js",
     "test:vrt": "nightwatch -c nightwatch.vrt.conf.js",
-    "consolidate:vrt": "set CONSOLIDATE=1 && npm run test:vrt"
+    "consolidate:vrt": "set CONSOLIDATE=1 && npm run test:vrt",
+    "test:cucumber": "cucumber-js --require cucumber.conf.js --require step-definitions --format node_modules/cucumber-pretty"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "cucumber": "^5.1.0",
     "chromedriver": "^87.0.1",
     "geckodriver": "^1.21.0",
-    "nightwatch": "^1.5.1"
+    "nightwatch": "^1.5.1",
+    "nightwatch-api": "^3.0.1"
   },
   "dependencies": {
+    "cucumber-pretty": "^1.5.0",
     "dotenv": "^8.2.0",
     "nightwatch-vrt": "^0.2.10"
   }
