@@ -16,7 +16,7 @@
   "license": "ISC",
   "devDependencies": {
     "cucumber": "^5.1.0",
-    "chromedriver": "^87.0.1",
+    "chromedriver": "^87.0.5",
     "geckodriver": "^1.21.0",
     "nightwatch": "^1.5.1",
     "nightwatch-api": "^3.0.1"
